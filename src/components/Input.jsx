@@ -28,7 +28,7 @@ export default function Input() {
             onChange={handleNameChange}
             type="text"
             value={name}
-            className="w-56 h-10 text-black rounded-lg px-1"
+            className="w-56 h-10 text-black rounded-lg px-2"
           />
         </form>
         <form className="font-semibold mr-8">
@@ -37,7 +37,8 @@ export default function Input() {
             onChange={handlePriceChange}
             type="text"
             value={price}
-            className="w-56 h-10 text-black rounded-lg px-1"
+            placeholder="0"
+            className="w-56 h-10 text-black rounded-lg px-2 placeholder-black"
           />
         </form>
         <button

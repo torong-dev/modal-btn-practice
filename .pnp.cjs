@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:bae8a007552acebe471b01391f604c516490ca026dce78366c01f4be783e3e5c0cf61098cd8ba93b8414d449b73355c0ab7e92d1083d042550b5db54deee5c0a#npm:18.2.0"],\
             ["react-icons", "virtual:bae8a007552acebe471b01391f604c516490ca026dce78366c01f4be783e3e5c0cf61098cd8ba93b8414d449b73355c0ab7e92d1083d042550b5db54deee5c0a#npm:4.12.0"],\
+            ["react-portal", "virtual:bae8a007552acebe471b01391f604c516490ca026dce78366c01f4be783e3e5c0cf61098cd8ba93b8414d449b73355c0ab7e92d1083d042550b5db54deee5c0a#npm:4.2.2"],\
             ["react-scripts", "virtual:bae8a007552acebe471b01391f604c516490ca026dce78366c01f4be783e3e5c0cf61098cd8ba93b8414d449b73355c0ab7e92d1083d042550b5db54deee5c0a#npm:5.0.1"],\
             ["tailwindcss", "npm:3.4.0"],\
             ["web-vitals", "npm:2.1.4"]\
@@ -12385,6 +12386,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:bae8a007552acebe471b01391f604c516490ca026dce78366c01f4be783e3e5c0cf61098cd8ba93b8414d449b73355c0ab7e92d1083d042550b5db54deee5c0a#npm:18.2.0"],\
             ["react-icons", "virtual:bae8a007552acebe471b01391f604c516490ca026dce78366c01f4be783e3e5c0cf61098cd8ba93b8414d449b73355c0ab7e92d1083d042550b5db54deee5c0a#npm:4.12.0"],\
+            ["react-portal", "virtual:bae8a007552acebe471b01391f604c516490ca026dce78366c01f4be783e3e5c0cf61098cd8ba93b8414d449b73355c0ab7e92d1083d042550b5db54deee5c0a#npm:4.2.2"],\
             ["react-scripts", "virtual:bae8a007552acebe471b01391f604c516490ca026dce78366c01f4be783e3e5c0cf61098cd8ba93b8414d449b73355c0ab7e92d1083d042550b5db54deee5c0a#npm:5.0.1"],\
             ["tailwindcss", "npm:3.4.0"],\
             ["web-vitals", "npm:2.1.4"]\
@@ -15188,6 +15190,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-is-npm-18.2.0-0cc5edb910-e72d0ba81b.zip/node_modules/react-is/",\
           "packageDependencies": [\
             ["react-is", "npm:18.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-portal", [\
+        ["npm:4.2.2", {\
+          "packageLocation": "./.yarn/cache/react-portal-npm-4.2.2-bd632ca24a-dc7cd0c690.zip/node_modules/react-portal/",\
+          "packageDependencies": [\
+            ["react-portal", "npm:4.2.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:bae8a007552acebe471b01391f604c516490ca026dce78366c01f4be783e3e5c0cf61098cd8ba93b8414d449b73355c0ab7e92d1083d042550b5db54deee5c0a#npm:4.2.2", {\
+          "packageLocation": "./.yarn/__virtual__/react-portal-virtual-9eb4f2dc3d/0/cache/react-portal-npm-4.2.2-bd632ca24a-dc7cd0c690.zip/node_modules/react-portal/",\
+          "packageDependencies": [\
+            ["react-portal", "virtual:bae8a007552acebe471b01391f604c516490ca026dce78366c01f4be783e3e5c0cf61098cd8ba93b8414d449b73355c0ab7e92d1083d042550b5db54deee5c0a#npm:4.2.2"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:bae8a007552acebe471b01391f604c516490ca026dce78366c01f4be783e3e5c0cf61098cd8ba93b8414d449b73355c0ab7e92d1083d042550b5db54deee5c0a#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
