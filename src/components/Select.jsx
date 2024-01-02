@@ -6,6 +6,20 @@ export default function Select() {
   const leftSelect = useSelect("React");
   const rightSelect = useSelect("React");
 
+  const handleLeftSelectClick = () => {
+    if (rightSelect.isOpen) {
+      rightSelect.handleSelectClick();
+    }
+    leftSelect.handleSelectClick();
+  };
+
+  const handleRightSelectClick = () => {
+    if (leftSelect.isOpen) {
+      leftSelect.handleSelectClick();
+    }
+    rightSelect.handleSelectClick();
+  };
+
   return (
     <div className="pl-10 pr-10">
       <div className="relative overflow-hidden pt-4 pb-20 border-solid border-4 border-gray-500">
@@ -13,13 +27,13 @@ export default function Select() {
         <div className="flex">
           <div>
             <button
-              onClick={leftSelect.handleSelectClick}
+              onClick={handleLeftSelectClick}
               className="relative flex justify-between items-center pl-6 pr-6 mt-8 mr-4 w-72 h-10 border-solid border-2 border-gray-500 rounded-xl"
             >
               {leftSelect.selectedOption} <FaCaretDown />
               {leftSelect.isOpen && (
                 <div
-                  className="absolute text-left top-full -left-0.5 w-72 mt-2 bg-zinc-900 border-solid border-2 border-gray-500 rounded-xl"
+                  className="fixed top-[690px] left-[44px] text-left w-72 mt-2 bg-zinc-900 border-solid border-2 border-gray-500 rounded-xl"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <div
@@ -52,7 +66,7 @@ export default function Select() {
           </div>
           <div>
             <button
-              onClick={rightSelect.handleSelectClick}
+              onClick={handleRightSelectClick}
               className="flex justify-between items-center pl-6 pr-6 mt-8 w-72 h-10 border-solid border-2 border-gray-500 rounded-xl relative"
             >
               {rightSelect.selectedOption} <FaCaretDown />

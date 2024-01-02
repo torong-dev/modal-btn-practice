@@ -8,8 +8,8 @@ export function useSelect(defaultOption) {
     setIsOpen(!isOpen);
   };
 
-  const handleOptionClick = (value) => {
-    setSelectedOption(value);
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
     setIsOpen(false);
   };
 
